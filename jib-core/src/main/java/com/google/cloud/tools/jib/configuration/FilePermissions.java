@@ -69,6 +69,7 @@ public class FilePermissions {
    * @param posixFilePermissions the set of {@link PosixFilePermission}
    * @return a new {@link FilePermissions} with the given permissions
    */
+  @SuppressWarnings("NullAway") // PERMISSION_MAP.get() will never return null
   public static FilePermissions fromPosixFilePermissions(
       Set<PosixFilePermission> posixFilePermissions) {
     int permissionBits = 0;

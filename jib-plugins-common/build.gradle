@@ -40,7 +40,7 @@ dependencies {
   testCompile 'org.slf4j:slf4j-api:1.7.25'
 
   // NullAway errorprone plugin
-  apt 'com.uber.nullaway:nullaway:0.4.2'
+  apt 'com.uber.nullaway:nullaway:0.6.4'
   errorprone 'com.google.errorprone:error_prone_core:2.2.0'
 }
 

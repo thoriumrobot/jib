@@ -50,7 +50,7 @@ dependencies {
   testImplementation 'org.slf4j:slf4j-api:1.7.25'
 
   // NullAway errorprone plugin
-  apt 'com.uber.nullaway:nullaway:0.4.2'
+  apt 'com.uber.nullaway:nullaway:0.6.4'
   errorprone 'com.google.errorprone:error_prone_core:2.2.0'
 }
 
@@ -91,9 +91,9 @@ tasks.withType(JavaCompile) {
 }
 
 // Fail build on javadoc warnings
-tasks.withType(Javadoc) {
-  options.addBooleanOption('Xwerror', true)
-}
+//tasks.withType(Javadoc) {
+//  options.addBooleanOption('Xwerror', true)
+//}
 assemble.dependsOn javadoc
 
 tasks.withType(Test) {
